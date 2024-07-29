@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: abystoma/test@branch
+          repository: abystoma/test
+	  ref: branch
       - name: Greetings
         run: echo "$(<greetings.txt)"
